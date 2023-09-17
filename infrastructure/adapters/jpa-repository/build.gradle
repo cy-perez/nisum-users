@@ -1,0 +1,14 @@
+buildscript {
+    ext {
+        springBootVersion = '3.1.2'
+    }
+}
+
+dependencies {
+    implementation project(':core')
+
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa:${springBootVersion}"
+    implementation 'org.reactivecommons.utils:object-mapper:0.1.0'
+    testImplementation 'org.reactivecommons.utils:object-mapper:0.1.0'
+}
+

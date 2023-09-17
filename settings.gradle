@@ -1,0 +1,12 @@
+rootProject.name = 'nisum-users'
+
+include ':app-service'
+include ':core'
+include ':service'
+project(':app-service').projectDir = file('./applications/app-service')
+project(':core').projectDir = file('./domain/core')
+project(':service').projectDir = file('./domain/service')
+include ':entry-points'
+project(':entry-points').projectDir = file('./infrastructure/receivers/entry-points')
+include ':jpa-repository'
+project(':jpa-repository').projectDir = file('./infrastructure/adapters/jpa-repository')

@@ -1,0 +1,20 @@
+apply plugin: 'org.springframework.boot'
+
+buildscript {
+	ext {
+		springBootVersion = '3.1.2'
+	}
+}
+
+dependencies {
+	implementation "org.springframework.boot:spring-boot-starter-web:${springBootVersion}"
+	implementation "org.springframework.boot:spring-boot-starter-actuator:${springBootVersion}"
+	implementation 'org.reactivecommons.utils:object-mapper:0.1.0'
+
+	implementation project(":service")
+	implementation project(":core")
+	implementation project(":entry-points")
+	implementation project(":jpa-repository")
+
+	runtimeOnly "org.springframework.boot:spring-boot-devtools:${springBootVersion}"
+}
