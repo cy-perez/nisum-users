@@ -37,6 +37,15 @@ public class ResponseBuilder {
                         .build());
     }
 
+    public static <T> ResponseEntity<ResponseDTO<T>> build401Response() {
+        return ResponseEntity.status(401).body(
+                ResponseDTO.<T>builder()
+                        .transactionId(UUID.randomUUID().toString())
+                        .message("Fallo la autenticacion..!")
+                        .code(401)
+                        .build());
+    }
+
     public static <T> ResponseEntity<ResponseDTO<T>> build404Response() {
         return ResponseEntity.status(404).body(
                 ResponseDTO.<T>builder()
@@ -44,7 +53,6 @@ public class ResponseBuilder {
                         .message("Registro(s) no encontrado(s)")
                         .code(404)
                         .build());
-
     }
 
     public static <T> ResponseEntity<ResponseDTO<T>> build400PasswordResponse() {

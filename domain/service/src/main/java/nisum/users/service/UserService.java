@@ -2,8 +2,8 @@ package nisum.users.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.java.Log;
-import nisum.users.domain.common.model.User;
 import nisum.users.domain.common.UserGatewayRepository;
+import nisum.users.domain.common.model.User;
 
 import java.util.List;
 

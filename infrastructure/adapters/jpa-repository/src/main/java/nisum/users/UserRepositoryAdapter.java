@@ -3,8 +3,8 @@ package nisum.users;
 
 import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
-import nisum.users.domain.common.model.User;
 import nisum.users.domain.common.UserGatewayRepository;
+import nisum.users.domain.common.model.User;
 import nisum.users.mapper.UserRepositoryMapper;
 import org.springframework.stereotype.Repository;
 
