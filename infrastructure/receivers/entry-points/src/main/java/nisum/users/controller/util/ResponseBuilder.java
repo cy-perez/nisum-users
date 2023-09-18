@@ -50,7 +50,7 @@ public class ResponseBuilder {
         return ResponseEntity.status(404).body(
                 ResponseDTO.<T>builder()
                         .transactionId(UUID.randomUUID().toString())
-                        .message("Registro(s) no encontrado(s)")
+                        .message("Registro no encontrado")
                         .code(404)
                         .build());
     }
