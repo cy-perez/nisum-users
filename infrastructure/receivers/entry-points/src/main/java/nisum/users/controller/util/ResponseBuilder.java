@@ -55,6 +55,15 @@ public class ResponseBuilder {
                         .build());
     }
 
+    public static <T> ResponseEntity<ResponseDTO<T>> build400EmailExistResponse() {
+        return ResponseEntity.status(400).body(
+                ResponseDTO.<T>builder()
+                        .transactionId(UUID.randomUUID().toString())
+                        .message("Request incorrecta: el correo del usuario que desea registrar ya existe")
+                        .code(400)
+                        .build());
+    }
+
     public static <T> ResponseEntity<ResponseDTO<T>> build400PasswordResponse() {
         return ResponseEntity.status(400).body(
                 ResponseDTO.<T>builder()

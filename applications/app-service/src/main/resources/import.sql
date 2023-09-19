@@ -1,0 +1,7 @@
+INSERT INTO nisum_users (created,id,is_active,last_login,modified,name,password,token,id_email) values ('2023-09-18T15:20:32.964+00:00','fd090ea0-5636-11ee-8c99-0242ac120002',true,'2023-09-18T15:20:32.964+00:00','2023-09-18T15:20:32.964+00:00','Miguel Correa','Hunter123','eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaXN1bS11c2VyIiwiZXhwIjoxNjk1MDU0MjU3fQ.TdAKieeaWTIN2nh86bHiv7qeFZSNiKtl-c2htGDcMgI','miguel@correa.org');
+INSERT INTO users_phones (city_code,country_code,user_email,number) values ('1','30','miguel@correa.org','3103254854');
+
+INSERT INTO nisum_users (created,id,is_active,last_login,modified,name,password,token,id_email) values ('2023-09-18T15:20:32.964+00:00','ej345ea0-5636-11ee-8c99-0242ac104581',true,'2023-09-18T15:20:32.964+00:00','2023-09-18T15:20:32.964+00:00','Juan Castro','Hunter456','eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJuaXN1bS11c2VyIiwiZXhwIjoxNjk1MDU2NjI2fQ.hpAV4met-ZyOtwrBVFO9xGHFt8-VlModnYoP4_uojtk','juan@castro.org');
+INSERT INTO users_phones (city_code,country_code,user_email,number) values ('1','30','juan@castro.org','3102546654');
+INSERT INTO users_phones (city_code,country_code,user_email,number) values ('2','40','juan@castro.org','3112546365');
+INSERT INTO users_phones (city_code,country_code,user_email,number) values ('3','50','juan@castro.org','3123245688');

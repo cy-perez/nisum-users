@@ -83,11 +83,18 @@
 ### Ejecución del servicio:
 - [x] Clonar o descargar el proyecto desde el repositorio.
 - [x] Ejecutar el servicio con las configuraciones correspondientes al JDK de Java 17, por ejemplo, temurin-17.0.8.
+  - Al ejecutarse la aplicación, se generan las tablas de **nisum_users** y **users_phones** a partir de las anotaciones de jakarta.persistence existentes en las entidades UserData y PhoneData.
+  - Igualmente, posterior a la creación de las tablas en mención, se realiza la inserción de algunos datos relacionados en el script **import.sql** de los recursos de la aplicación.
 - [x] Importar la colección de Postman existente en los recursos de la aplicación (applications/app-service/src/main/resources/nisum_users_postman_collection.json).
 - [x] Crear en las environments globales de Postman una denominada token, cuyo valor actual debe ser el token que arroja la operación GetUserAuth de la colección de Postman.
 - [x] Para cada operación existente en la colección (CreateUser, GetUserByEmail, GetAllUsers, UpdateUser y DeleteUserByEmail), se debe asociar la Authentication como Bearer token y debe llevar como valor el token de la variable global descrita en el punto anterior. 
 - [x] La documentación del servicio generada por Swagger puede ser visualizada en la ruta <http://localhost:8080/doc/swagger-ui/index.html>.
 - [x] El seguimiento a los cambios en la base de datos pueden ser visualizados en la ruta <http://localhost:8080/h2-console>.
+  - Datos de conexión:
+      - **Driver Class:** org.h2.Driver
+      - **JDBC URL:** jdbc:h2:mem:usersdb
+      - **User Name:** admin
+      - **Password:** root
 
 #### Ejemplos de JSON para request y response
 

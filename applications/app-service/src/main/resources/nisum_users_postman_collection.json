@@ -354,6 +354,65 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"transactionId\": \"10db1733-cba0-4f7a-82b8-47061a792e71\",\n    \"code\": 201,\n    \"message\": \"Creacion exitosa\",\n    \"data\": {\n        \"name\": \"Miguel Correa\",\n        \"email\": \"miguel@correa.org\",\n        \"phones\": [\n            {\n                \"number\": \"3103254854\",\n                \"cityCode\": \"1\",\n                \"countryCode\": \"30\"\n            },\n            {\n                \"number\": \"3115874521\",\n                \"cityCode\": \"2\",\n                \"countryCode\": \"57\"\n            },\n            {\n                \"number\": \"3123256454\",\n                \"cityCode\": \"3\",\n                \"countryCode\": \"33\"\n            }\n        ],\n        \"created\": \"2023-09-18T16:56:49.644+00:00\",\n        \"modified\": \"2023-09-18T16:56:49.644+00:00\",\n        \"lastLogin\": \"2023-09-18T16:56:49.644+00:00\",\n        \"isActive\": true\n    }\n}"
+				},
+				{
+					"name": "UserExistBadRequest",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"name\":\"Miguel Correa\",\r\n\t\"email\":\"miguel@correa.org\",\r\n\t\"password\":\"Hunter123\",\r\n\t\"phones\":[\r\n\t\t{\r\n\t\t\t\"number\":\"3103254854\",\r\n\t\t\t\"cityCode\":\"1\",\r\n\t\t\t\"countryCode\":\"30\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"number\":\"3115874521\",\r\n\t\t\t\"cityCode\":\"2\",\r\n\t\t\t\"countryCode\":\"57\"\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"number\":\"3123256454\",\r\n\t\t\t\"cityCode\":\"3\",\r\n\t\t\t\"countryCode\":\"33\"\r\n\t\t}\r\n\t]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/nisum-users/save",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"nisum-users",
+								"save"
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 18 Sep 2023 19:40:01 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"transactionId\": \"3569fc94-b98f-4982-8b96-0a8e6e53238c\",\n    \"code\": 400,\n    \"message\": \"Request incorrecta: el correo del usuario que desea registrar ya existe\"\n}"
 				}
 			]
 		},

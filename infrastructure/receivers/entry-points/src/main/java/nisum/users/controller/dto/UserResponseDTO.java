@@ -8,7 +8,6 @@ import lombok.experimental.SuperBuilder;
 
 import java.util.Date;
 
-@Data
 @SuperBuilder
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @AllArgsConstructor

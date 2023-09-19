@@ -1,10 +1,13 @@
 buildscript {
     ext {
         springCloudVersion = 'Hoxton.SR11'
+        jakartaServletVersion = '4.0.4'
+        swaggerModelsVersion = '2.2.15'
         springBootVersion = '3.1.2'
         lombokVersion = '1.18.26'
-        swaggerVersion = '1.7.0'
-        jacocoVersion = '0.8.10'
+        assertjVersion = '3.24.2'
+        openApiVersion = '2.2.0'
+        junitVersion = '5.10.0'
         sonarVersion = '3.0'
     }
     repositories {
