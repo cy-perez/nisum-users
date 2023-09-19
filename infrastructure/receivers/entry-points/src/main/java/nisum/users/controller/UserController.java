@@ -38,11 +38,11 @@ public class UserController {
             @RequestBody UserRequestDTO userDTO,
             @RequestHeader("Authorization") String authorizationHeader) {
         try {
-            if(userService.findById(userDTO.getEmail()) != null)
-                return ResponseBuilder.build400EmailExistResponse();
-
             if (!jwtValidator.isValidToken(authorizationHeader))
                 return ResponseBuilder.build401Response();
+
+            if(userService.findById(userDTO.getEmail()) != null)
+                return ResponseBuilder.build400EmailExistResponse();
 
             if (!isValidEmail(userDTO.getEmail()))
                 return ResponseBuilder.build400EmailResponse();

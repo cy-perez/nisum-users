@@ -2,9 +2,9 @@ package nisum.users.controller.dto;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import java.util.List;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 class UserRequestDTOTest {
